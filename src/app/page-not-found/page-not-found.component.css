@@ -1,0 +1,16 @@
+mat-card:first-child{
+  min-height: 300px;
+}
+
+mat-card-content{
+  height: 100%;
+}
+
+button{
+  background-image: var(--dark-gradient) !important;
+  color: var(--accent-color) !important;
+}
+
+mat-card img{
+  border-bottom-left-radius: inherit;
+}

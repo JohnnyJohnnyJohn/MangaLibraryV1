@@ -1,0 +1,50 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended routerLink="/">
+        <mat-icon>arrow_back</mat-icon>
+        RETOUR
+      </button>
+        <span fxFlex="1 1 auto"></span>
+        <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+    <mat-card class="title_page">
+      <h2>
+        {{ editor?.libelle | uppercase }}
+      </h2>
+    </mat-card>
+  </header>
+
+  <main fxLayout="column" fxFlex="1 1 auto" fxLayoutAlign="center center">
+    <mat-card>
+      <mat-card-header>
+        <button mat-fab extended routerLink="update" fxFlex>
+          <mat-icon>edit</mat-icon>
+          MODIFIER ÉDITEUR
+        </button>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-action-list fxLayout="column">
+          <mat-divider></mat-divider>
+          @for (manga of mangas; track manga._id) {
+            <button mat-list-item routerLink="./manga/{{manga._id}}">
+              <img matListItemAvatar src="{{manga.urlImg}}" alt="Logo {{manga.libelle}}">
+              <h3 matListItemTitle>{{ manga.libelle }}</h3>
+            </button>
+            <mat-divider></mat-divider>
+          }
+          @if (mangas?.length! == 0) {
+            <h3 matListItemLine>Aucun manga à afficher</h3>
+            <mat-divider></mat-divider>
+          }
+        </mat-action-list>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-fab extended routerLink="nouveau-manga" fxFlex>
+          <mat-icon>add</mat-icon>
+          AJOUTER MANGA
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </main>
+</div>

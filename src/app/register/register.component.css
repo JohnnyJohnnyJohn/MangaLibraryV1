@@ -1,0 +1,22 @@
+mat-card{
+  width: 410px;
+  height: fit-content;
+  padding: 20px;
+}
+
+mat-card-actions{
+  width: 100%;
+  padding: 16px !important;
+}
+
+mat-card-actions button{
+  width: 100%;
+  font-size: 1rem;
+  padding: 20px;
+  background: var(--color-gradient);
+  color: white;
+}
+
+mat-hint{
+  color: var(--warn-color) !important;
+}

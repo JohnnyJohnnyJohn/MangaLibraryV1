@@ -1,0 +1,25 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+    <mat-card class="title_page"><h2>ERREUR 404</h2></mat-card>
+  </header>
+
+  <main fxLayout="column" fxFlex="1 1 auto" fxLayoutAlign="center center">
+
+
+    <mat-card fxLayout fxLayoutAlign="none center" fxLayout.lt-lg="column-reverse" fxLayout.gt-md="row">
+      <img mat-card-image src="../../assets/zoro404.jpeg" alt="Zoro Sleeping" fxHide.lt-lg="true" width="30%">
+      <mat-card-content fxLayout="column" fxFlex fxLayoutAlign="space-evenly center">
+        <h2>Oops, vous êtes perdu...</h2>
+        <button mat-fab extended routerLink="/">
+          <mat-icon>arrow_back</mat-icon>
+          RETOUR
+        </button>
+      </mat-card-content>
+    </mat-card>
+
+  </main>
+</div>

@@ -1,0 +1,46 @@
+main{
+  padding-bottom: 40px;
+}
+
+mat-card{
+  width: 50%;
+  min-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+mat-card img{
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+mat-card-title{
+  text-align: center;
+  font-size: x-large;
+  font-weight: 900;
+  background-image:  var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px;
+}
+
+mat-menu{
+  padding-top: 0 !important;
+}
+
+mat-card-content p{
+  padding: 20px 10px 0 10px;
+  font-size: large;
+  line-height: 30px;
+  text-align: justify;
+}
+
+button[mat-menu-item]{
+  text-align: center;
+}
+
+button:last-child{
+  background: var(--color-gradient) !important;
+  color: white;
+  margin: 8px 8px 0 8px;
+}

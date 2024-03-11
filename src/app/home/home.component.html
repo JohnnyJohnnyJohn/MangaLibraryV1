@@ -1,0 +1,57 @@
+<div class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended [matMenuTriggerFor]="listEditors">
+        <mat-icon>more_vert</mat-icon>
+        LISTE ÉDITEURS
+      </button>
+      <mat-menu #listEditors="matMenu" class="mat-menu-panel">
+        <mat-divider></mat-divider>
+        @for (editor of editors; track editor._id){
+          <button mat-menu-item [routerLink]="['/editeur', editor._id]">
+            {{ editor.libelle }}
+          </button>
+          <mat-divider></mat-divider>
+        }
+        <button mat-fab extended routerLink="nouvel-editeur">
+          <mat-icon>add</mat-icon>
+          AJOUTER ÉDITEUR
+        </button>
+      </mat-menu>
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+      <span fxFlex="1 1 auto"></span>
+      <button mat-fab extended [matMenuTriggerFor]="account">
+        <mat-icon>manage_accounts</mat-icon>
+        MON COMPTE
+      </button>
+      <mat-menu #account="matMenu" class="mat-menu-panel">
+        <button mat-menu-item>
+          Informations<br>personnelles
+        </button>
+        <button mat-fab extended (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          DÉCONNEXION
+        </button>
+      </mat-menu>
+    </mat-toolbar>
+  </header>
+  <main>
+    <mat-card class="mat-elevation-z6 title_page"><h2>MANGA NEWS</h2></mat-card>
+
+    @for (article of articles; track article.id){
+      <mat-card fxLayout fxLayout.lt-lg="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="0px" fxLayoutGap.lt-lg="20px">
+        <img mat-card-image src="{{article.img}}" alt="Image article" class="mat-elevation-z6" fxFlex.lt-lg="100%" fxFlex.gt-md="30%">
+
+        <mat-card-content>
+          <mat-card-title>
+            {{article.title}}
+          </mat-card-title>
+          <p>
+            {{article.content}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    }
+  </main>
+</div>

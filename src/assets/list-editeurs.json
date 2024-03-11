@@ -1,0 +1,774 @@
+{
+  "editeurs": [
+    {
+      "id": 1,
+      "nom": "Shueisha",
+      "logo": "https://www.shueisha.co.jp/wp-content/themes/shueisha/shared/en/image/logo-header.svg",
+      "mangas": [
+        {
+          "id": 1,
+          "titre": "One Piece",
+          "logo": "https://seeklogo.com/images/O/one-piece-mugiwara-flag-logo-08F872AFB6-seeklogo.com.png?v=638288188740000000",
+          "personnages": [
+            {
+              "id": 1,
+              "nom": "Monkey D. Luffy",
+              "role": "Capitaine",
+              "particularite": "Élasticité"
+            },
+            {
+              "id": 2,
+              "nom": "Roronoa Zoro",
+              "role": "Épéiste",
+              "particularite": "Maîtrise exceptionnelle du sabre"
+            },
+            {
+              "id": 3,
+              "nom": "Nami",
+              "role": "Navigatrice",
+              "particularite": "Expertise en météorologie"
+            },
+            {
+              "id": 4,
+              "nom": "Usopp",
+              "role": "Tireur d'élite",
+              "particularite": "Ingéniosité et précision au tir"
+            },
+            {
+              "id": 5,
+              "nom": "Sanji",
+              "role": "Cuisinier",
+              "particularite": "Jambes surpuissantes"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "titre": "Naruto",
+          "logo": "https://i.pinimg.com/736x/5f/60/34/5f60349f6b0980548907a7a81a8f3aed.jpg",
+          "personnages": [
+            {
+              "id": 6,
+              "nom": "Naruto Uzumaki",
+              "role": "Ninja",
+              "particularite": "Jinchūriki de Kurama"
+            },
+            {
+              "id": 7,
+              "nom": "Sasuke Uchiha",
+              "role": "Ninja",
+              "particularite": "Sharingan"
+            },
+            {
+              "id": 8,
+              "nom": "Sakura Haruno",
+              "role": "Ninja",
+              "particularite": "Expertise médicale"
+            },
+            {
+              "id": 9,
+              "nom": "Kakashi Hatake",
+              "role": "Leader de l'équipe 7",
+              "particularite": "Sharingan copieur"
+            },
+            {
+              "id": 10,
+              "nom": "Hinata Hyuga",
+              "role": "Ninja",
+              "particularite": "Byakugan"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "titre": "Dragon Ball",
+          "logo": "https://cdn.worldvectorlogo.com/logos/dragon-ball-z.svg",
+          "personnages": [
+            {
+              "id": 11,
+              "nom": "Goku",
+              "role": "Saiyan",
+              "particularite": "Maîtrise du Ki et transformations Super Saiyan"
+            },
+            {
+              "id": 12,
+              "nom": "Vegeta",
+              "role": "Prince des Saiyans",
+              "particularite": "Maîtrise du Ki et transformations Super Saiyan"
+            },
+            {
+              "id": 13,
+              "nom": "Bulma",
+              "role": "Scientifique"
+            },
+            {
+              "id": 14,
+              "nom": "Piccolo",
+              "role": "Namekien",
+              "particularite": "Techniques de régénération et de combat"
+            },
+            {
+              "id": 15,
+              "nom": "Frieza",
+              "role": "Tyrant intergalactique",
+              "particularite": "Transformations multiples"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "titre": "Bleach",
+          "logo": "https://seeklogo.com/images/B/bleach-logo-F81A422109-seeklogo.com.png",
+          "personnages": [
+            {
+              "id": 16,
+              "nom": "Ichigo Kurosaki",
+              "role": "Shinigami remplaçant",
+              "particularite": "Peut voir les fantômes"
+            },
+            {
+              "id": 17,
+              "nom": "Rukia Kuchiki",
+              "role": "Shinigami",
+              "particularite": "Utilise des sorts de Kido"
+            },
+            {
+              "id": 18,
+              "nom": "Uryu Ishida",
+              "role": "Quincy",
+              "particularite": "Maîtrise de l'arc et des flèches d'énergie spirituelle"
+            },
+            {
+              "id": 19,
+              "nom": "Orihime Inoue",
+              "role": "Humaine",
+              "particularite": "Pouvoirs spéciaux de guérison et protection"
+            },
+            {
+              "id": 20,
+              "nom": "Sosuke Aizen",
+              "role": "Ancien capitaine Shinigami",
+              "particularite": "Pouvoirs de manipulation"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "titre": "Jujutsu Kaisen",
+          "logo": "https://seeklogo.com/images/J/jujutsu-no-kaisen-logo-E3E409F37B-seeklogo.com.png",
+          "personnages": [
+            {
+              "id": 21,
+              "nom": "Yuji Itadori",
+              "role": "Étudiant et sorcier",
+              "particularite": "Hôte de Ryomen Sukuna"
+            },
+            {
+              "id": 22,
+              "nom": "Megumi Fushiguro",
+              "role": "Sorcier",
+              "particularite": "Utilise des Shikigami basés sur des ombres"
+            },
+            {
+              "id": 23,
+              "nom": "Nobara Kugisaki",
+              "role": "Sorcière",
+              "particularite": "Techniques de malédiction avec des clous"
+            },
+            {
+              "id": 24,
+              "nom": "Satoru Gojo",
+              "role": "Enseignant",
+              "particularite": "Considéré comme le sorcier le plus puissant"
+            },
+            {
+              "id": 25,
+              "nom": "Sukuna",
+              "role": "Fléau de grade spécial",
+              "particularite": "Pouvoirs de malédiction extrêmement puissants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Kodansha",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/79/K%C5%8Ddansha_logo.png",
+      "mangas": [
+        {
+          "id": 6,
+          "titre": "Attack on Titan",
+          "logo": "https://community.carbide3d.com/uploads/default/original/3X/2/6/2640ea01be3c21d4588c150942ea158a0d466700.svg",
+          "personnages": [
+            {
+              "id": 26,
+              "nom": "Eren Yeager",
+              "role": "Titan Shifter",
+              "particularite": "Transformation en Titan"
+            },
+            {
+              "id": 27,
+              "nom": "Mikasa Ackerman",
+              "role": "Soldat d'élite",
+              "particularite": "Habiletés physiques exceptionnelles"
+            },
+            {
+              "id": 28,
+              "nom": "Armin Arlert",
+              "role": "Stratège",
+              "particularite": "Intelligence exceptionnelle"
+            },
+            {
+              "id": 29,
+              "nom": "Levi Ackerman",
+              "role": "Capitaine",
+              "particularite": "Soldat le plus fort de l'humanité"
+            },
+            {
+              "id": 30,
+              "nom": "Historia Reiss",
+              "role": "Reine"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "titre": "Fairy Tail",
+          "logo": "https://www.nautiljon.com/images/description/00/54/1579357173751_image.jpg",
+          "personnages": [
+            {
+              "id": 31,
+              "nom": "Natsu Dragneel",
+              "role": "Mage de feu",
+              "particularite": "Maîtrise du feu"
+            },
+            {
+              "id": 32,
+              "nom": "Lucy Heartfilia",
+              "role": "Mage constellataire",
+              "particularite": "Invocation d'esprits célestes"
+            },
+            {
+              "id": 33,
+              "nom": "Gray Fullbuster",
+              "role": "Mage de glace",
+              "particularite": "Création de glace"
+            },
+            {
+              "id": 34,
+              "nom": "Erza Scarlet",
+              "role": "Mage chevalier",
+              "particularite": "Changement d'armure et d'armes"
+            },
+            {
+              "id": 35,
+              "nom": "Happy",
+              "role": "Exceed",
+              "particularite": "Vol"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "titre": "The Seven Deadly Sins",
+          "logo": "https://i.pinimg.com/736x/3b/04/10/3b04107875fafdfab97611d1047263f0.jpg",
+          "personnages": [
+            {
+              "id": 36,
+              "nom": "Meliodas",
+              "role": "Leader des Seven Deadly Sins",
+              "particularite": "Full Counter"
+            },
+            {
+              "id": 37,
+              "nom": "Elizabeth Liones",
+              "role": "Princesse de Liones",
+              "particularite": "Pouvoirs de guérison"
+            },
+            {
+              "id": 38,
+              "nom": "Diane",
+              "role": "Membre des Seven Deadly Sins",
+              "particularite": "Maîtrise de la terre"
+            },
+            {
+              "id": 39,
+              "nom": "Ban",
+              "role": "Membre des Seven Deadly Sins",
+              "particularite": "Immortalité"
+            },
+            {
+              "id": 40,
+              "nom": "King",
+              "role": "Membre des Seven Deadly Sins",
+              "particularite": "Contrôle la lance spirituelle Chastiefol"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "titre": "Parasyte",
+          "logo": "https://ih1.redbubble.net/image.1833650782.6744/raf,360x360,075,t,fafafa:ca443f4786.jpg",
+          "personnages": [
+            {
+              "id": 41,
+              "nom": "Shinichi Izumi",
+              "role": "Étudiant",
+              "particularite": "Hôte d'un parasite"
+            },
+            {
+              "id": 42,
+              "nom": "Migi",
+              "role": "Parasite",
+              "particularite": "Peut transformer sa forme"
+            },
+            {
+              "id": 43,
+              "nom": "Satomi Murano",
+              "role": "Camarade de classe et intérêt amoureux de Shinichi"
+            },
+            {
+              "id": 44,
+              "nom": "Ryoko Tamiya",
+              "role": "Parasite",
+              "particularite": "Intelligence et curiosité élevées"
+            },
+            {
+              "id": 45,
+              "nom": "Gotou",
+              "role": "Parasite",
+              "particularite": "Peut fusionner plusieurs hôtes parasites"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "titre": "Ghost in the Shell",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Logo_Ghost_in_the_Shell_2017.svg/2560px-Logo_Ghost_in_the_Shell_2017.svg.png",
+          "personnages": [
+            {
+              "id": 46,
+              "nom": "Motoko Kusanagi",
+              "role": "Major",
+              "particularite": "Cyborg avec un corps entièrement mécanique"
+            },
+            {
+              "id": 47,
+              "nom": "Batou",
+              "role": "Membre de la Section 9",
+              "particularite": "Cyborg spécialisé dans le combat"
+            },
+            {
+              "id": 48,
+              "nom": "Togusa",
+              "role": "Membre de la Section 9",
+              "particularite": "Presque entièrement humain"
+            },
+            {
+              "id": 49,
+              "nom": "Daisuke Aramaki",
+              "role": "Chef de la Section 9"
+            },
+            {
+              "id": 50,
+              "nom": "Puppet Master",
+              "role": "Entité de renseignement artificielle",
+              "particularite": "Spécialisée dans le piratage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Shogakukan",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Shogakukan_logo.svg",
+      "mangas": [
+        {
+          "id": 11,
+          "titre": "Magi: The Labyrinth of Magic",
+          "logo": "https://preview.redd.it/kn7wymicuvg61.jpg?auto=webp&s=7f9bec69c472161e3bf18d57cddd0eb23859d27f",
+          "personnages": [
+            {
+              "id": 51,
+              "nom": "Aladdin",
+              "role": "Magi",
+              "particularite": "Peut invoquer Ugo",
+              "img": "urlImgAladdin"
+            },
+            {
+              "id": 52,
+              "nom": "Alibaba Saluja",
+              "role": "Aspire à conquérir un donjon",
+              "img": "urlImgAlibabaSaluja"
+            },
+            {
+              "id": 53,
+              "nom": "Morgiana",
+              "role": "Ancienne esclave",
+              "particularite": "Force exceptionnelle",
+              "img": "urlImgMorgiana"
+            },
+            {
+              "id": 54,
+              "nom": "Sinbad",
+              "role": "Roi de Sindria",
+              "particularite": "Possède de multiples djinns",
+              "img": "urlImgSinbad"
+            },
+            {
+              "id": 55,
+              "nom": "Judar",
+              "role": "Magi ennemi",
+              "particularite": "Sert l'Empire Ko",
+              "img": "urlImgJudar"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "titre": "Doraemon",
+          "logo": "https://i1.sndcdn.com/artworks-000514526490-ephx7l-t500x500.jpg",
+          "personnages": [
+            {
+              "id": 56,
+              "nom": "Doraemon",
+              "role": "Chat robot venu du futur",
+              "particularite": "Gadgets futuristes",
+              "img": "urlImgDoraemon"
+            },
+            {
+              "id": 57,
+              "nom": "Nobita Nobi",
+              "role": "Garçon paresseux et malchanceux",
+              "img": "urlImgNobitaNobi"
+            },
+            {
+              "id": 58,
+              "nom": "Shizuka Minamoto",
+              "role": "Amie de Nobita",
+              "img": "urlImgShizukaMinamoto"
+            },
+            {
+              "id": 59,
+              "nom": "Takeshi 'Gian' Goda",
+              "role": "Brute du quartier",
+              "img": "urlImgTakeshiGianGoda"
+            },
+            {
+              "id": 60,
+              "nom": "Suneo Honekawa",
+              "role": "Ami de Nobita",
+              "particularite": "Se vante de sa richesse",
+              "img": "urlImgSuneoHonekawa"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "titre": "Pokémon",
+          "logo": "https://miro.medium.com/v2/resize:fit:1400/1*XQeiadIOhndmF3xb1bUmQw.png",
+          "personnages": [
+            {
+              "id": 61,
+              "nom": "Ash Ketchum (Satoshi)",
+              "role": "Dresseur Pokémon",
+              "particularite": "Déterminé à devenir un Maître Pokémon"
+            },
+            {
+              "id": 62,
+              "nom": "Pikachu",
+              "role": "Premier Pokémon d'Ash",
+              "particularite": "Attaques électriques"
+            },
+            {
+              "id": 63,
+              "nom": "Team Rocket",
+              "role": "Antagonistes",
+              "particularite": "Cherchent à capturer des Pokémon rares"
+            },
+            {
+              "id": 64,
+              "nom": "Brock (Takeshi)",
+              "role": "Compagnon de voyage d'Ash",
+              "particularite": "Spécialiste des Pokémon de type Roche"
+            },
+            {
+              "id": 65,
+              "nom": "Misty (Kasumi)",
+              "role": "Compagne de voyage d'Ash",
+              "particularite": "Spécialiste des Pokémon de type Eau"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nom": "Square Enix",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/af/Square_Enix_logo.svg",
+      "mangas": [
+        {
+          "id": 14,
+          "titre": "Fullmetal Alchemist",
+          "logo": "https://www.shadowanime.com/cdn/shop/files/dc1e311a-07ec-4cbe-b6b9-6de7f31e2af3_1.12523d122d0f03ba7720638ccdd6169b_grande.jpg?v=1688908878",
+          "personnages": [
+            {
+              "id": 66,
+              "nom": "Edward Elric",
+              "role": "Alchimiste d'État",
+              "particularite": "Alchimie sans cercle de transmutation"
+            },
+            {
+              "id": 67,
+              "nom": "Alphonse Elric",
+              "role": "Frère d'Edward",
+              "particularite": "Âme liée à une armure"
+            },
+            {
+              "id": 68,
+              "nom": "Roy Mustang",
+              "role": "Alchimiste d'État",
+              "particularite": "Maîtrise de l'alchimie de feu"
+            },
+            {
+              "id": 69,
+              "nom": "Winry Rockbell",
+              "role": "Mécanicienne",
+              "particularite": "Spécialisée dans la création et réparation d'automails"
+            },
+            {
+              "id": 70,
+              "nom": "Scar",
+              "role": "Nomade d'Ishval",
+              "particularite": "Utilise l'alchimie destructrice"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "titre": "Pandora Hearts",
+          "logo": "https://static.wikia.nocookie.net/logocreation/images/0/0d/1PandoraHearts.jpg",
+          "personnages": [
+            {
+              "id": 71,
+              "nom": "Oz Vessalius",
+              "role": "Héritier de la famille Vessalius",
+              "particularite": "Jeté dans l'Abysse"
+            },
+            {
+              "id": 72,
+              "nom": "Alice",
+              "role": "Chain connue sous le nom de B-Rabbit",
+              "particularite": "Pouvoirs destructeurs"
+            },
+            {
+              "id": 73,
+              "nom": "Gilbert Nightray",
+              "role": "Protecteur et serviteur fidèle d'Oz",
+              "particularite": "Peut invoquer un corbeau noir géant"
+            },
+            {
+              "id": 74,
+              "nom": "Xerxes Break",
+              "role": "Membre de la famille Rainsworth",
+              "particularite": "Accompagné de sa Chain, Mad Hatter"
+            },
+            {
+              "id": 75,
+              "nom": "Vincent Nightray",
+              "role": "Frère de Gilbert",
+              "particularite": "Peut manipuler le temps"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "titre": "The Case Study of Vanitas",
+          "logo": "https://static.wikia.nocookie.net/pandorahearts/images/7/74/Vanitas_no_Carte_Logo_ENG.jpg",
+          "personnages": [
+            {
+              "id": 76,
+              "nom": "Vanitas",
+              "role": "Vampire humain",
+              "particularite": "Utilise un grimoire pour guérir les vampires"
+            },
+            {
+              "id": 77,
+              "nom": "Noé Archiviste",
+              "role": "Vampire",
+              "particularite": "Capable de lire les souvenirs par le sang"
+            },
+            {
+              "id": 78,
+              "nom": "Jeanne",
+              "role": "La 'Sorcière de l'épée'",
+              "particularite": "Force et habileté au combat"
+            },
+            {
+              "id": 79,
+              "nom": "Luca",
+              "role": "Jeune vampire noble"
+            },
+            {
+              "id": 80,
+              "nom": "Dominique de Sade",
+              "role": "Vampire noble",
+              "particularite": "Utilise son charme et influence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nom": "Kadokawa",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kadokawa_logo.svg/300px-Kadokawa_logo.svg.png",
+      "mangas": [
+        {
+          "id": 17,
+          "titre": "Neon Genesis Evangelion",
+          "logo": "https://i.ebayimg.com/images/g/ObAAAOSwrtdkB5Xu/s-l1200.webp",
+          "personnages": [
+            {
+              "id": 81,
+              "nom": "Shinji Ikari",
+              "role": "Pilote de l'Evangelion Unité-01",
+              "particularite": "Lutte contre les Anges"
+            },
+            {
+              "id": 82,
+              "nom": "Rei Ayanami",
+              "role": "Pilote de l'Evangelion Unité-00"
+            },
+            {
+              "id": 83,
+              "nom": "Asuka Langley Soryu",
+              "role": "Pilote de l'Evangelion Unité-02"
+            },
+            {
+              "id": 84,
+              "nom": "Misato Katsuragi",
+              "role": "Officier tactique de la NERV"
+            },
+            {
+              "id": 85,
+              "nom": "Gendo Ikari",
+              "role": "Chef de la NERV"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "titre": "No Game No Life",
+          "logo": "https://static4.mangowe.pl/pol_is_Mystery-Box-No-Game-No-Life-ROZNE-WARIATNY-CENOWE-21868.png",
+          "personnages": [
+            {
+              "id": 86,
+              "nom": "Sora",
+              "role": "Frère aîné",
+              "particularite": "Stratège brillant"
+            },
+            {
+              "id": 87,
+              "nom": "Shiro",
+              "role": "Sœur cadette",
+              "particularite": "Prodige en logique et calculs"
+            },
+            {
+              "id": 88,
+              "nom": "Jibril",
+              "role": "Membre de la race des Flügel",
+              "particularite": "Puissante et érudite"
+            },
+            {
+              "id": 89,
+              "nom": "Stephanie Dola",
+              "role": "Petite-fille du précédent roi d'Elchea"
+            },
+            {
+              "id": 90,
+              "nom": "Tet",
+              "role": "Dieu du jeu",
+              "particularite": "Invite Sora et Shiro dans le monde de Disboard"
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "titre": "Sword Art Online",
+          "logo": "https://i.pinimg.com/736x/15/5c/78/155c782ea1254da53b309209607072d4.jpg",
+          "personnages": [
+            {
+              "id": 91,
+              "nom": "Kirito (Kazuto Kirigaya)",
+              "role": "Protagoniste principal",
+              "particularite": "Expert de VRMMORPGs"
+            },
+            {
+              "id": 92,
+              "nom": "Asuna Yuuki",
+              "role": "Compétente épéiste",
+              "particularite": "Intérêt amoureux de Kirito"
+            },
+            {
+              "id": 93,
+              "nom": "Yui",
+              "role": "Intelligence artificielle",
+              "particularite": "Considérée comme la fille de Kirito et Asuna"
+            },
+            {
+              "id": 94,
+              "nom": "Sinon (Shino Asada)",
+              "role": "Tireuse d'élite",
+              "particularite": "Amie proche de Kirito"
+            },
+            {
+              "id": 95,
+              "nom": "Leafa (Suguha Kirigaya)",
+              "role": "Sœur cadette/cousine de Kirito",
+              "particularite": "Joueuse de Alfheim Online"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "titre": "Haruhi Suzumiya",
+          "logo": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0016/9495/brand.gif?itok=KYI7sGxU",
+          "personnages": [
+            {
+              "id": 96,
+              "nom": "Haruhi Suzumiya",
+              "role": "Étudiante excentrique",
+              "particularite": "Capable d'altérer la réalité"
+            },
+            {
+              "id": 97,
+              "nom": "Kyon",
+              "role": "Narrateur",
+              "particularite": "Seul membre normal du SOS Brigade"
+            },
+            {
+              "id": 98,
+              "nom": "Yuki Nagato",
+              "role": "Interface humanoïde extraterrestre"
+            },
+            {
+              "id": 99,
+              "nom": "Mikuru Asahina",
+              "role": "Voyageuse temporelle",
+              "particularite": "Souvent utilisée par Haruhi pour ses fantasmes"
+            },
+            {
+              "id": 100,
+              "nom": "Itsuki Koizumi",
+              "role": "Esper",
+              "particularite": "Membre du SOS Brigade, explique les phénomènes surnaturels"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

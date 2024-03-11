@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #000000;
+  --accent-color: #FFD500;
+  --warn-color: #ff0f00;
+  --dark-gradient: linear-gradient(
+    45deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(344deg 0% 2%) 21%,
+    hsl(344deg 0% 5%) 30%,
+    hsl(344deg 0% 7%) 39%,
+    hsl(344deg 0% 8%) 46%,
+    hsl(344deg 0% 10%) 54%,
+    hsl(344deg 0% 11%) 61%,
+    hsl(344deg 0% 12%) 69%,
+    hsl(344deg 0% 14%) 79%,
+    hsl(0deg 0% 15%) 100%
+  );
+  --full-color-gradient: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 21%,
+    hsl(315deg 100% 27%) 31%,
+    hsl(329deg 100% 36%) 39%,
+    hsl(337deg 100% 43%) 46%,
+    hsl(357deg 91% 59%) 53%,
+    hsl(17deg 100% 59%) 60%,
+    hsl(34deg 100% 53%) 68%,
+    hsl(45deg 100% 50%) 80%,
+    hsl(55deg 100% 50%) 100%
+  );
+  --color-gradient: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(281deg 100% 21%) 11%,
+    hsl(305deg 100% 22%) 22%,
+    hsl(320deg 100% 29%) 33%,
+    hsl(330deg 100% 35%) 44%,
+    hsl(337deg 100% 40%) 56%,
+    hsl(345deg 87% 47%) 67%,
+    hsl(4deg 87% 58%) 78%,
+    hsl(18deg 96% 56%) 89%,
+    hsl(31deg 100% 50%) 100%
+  );
+}
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("./assets/backlogin.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+mat-toolbar {
+  height: 80px !important;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-image: var(--full-color-gradient) !important;
+}
+
+mat-toolbar button{
+  background-image: var(--dark-gradient) !important;
+  color: var(--accent-color) !important;
+}
+
+button[extended]{
+  font-weight: bolder !important;
+  border-radius: 10px !important;
+}
+
+main {
+  background-color: #00000050;
+}
+
+h1 {
+  font-size: xxx-large !important;
+  font-weight: 900 !important;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center !important;
+  font-size: xx-large !important;
+  font-weight: 900 !important;
+  background: #0000d5;
+  background: var(--full-color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+mat-card{
+  border-radius: 10px !important;
+}
+
+.title_page{
+  width: 100%  !important;
+  margin-top: 80px !important;
+  border-radius: 0 !important;
+  border-width: 0 !important;
+  background-image: var(--dark-gradient) !important;
+  padding: 10px !important;
+}
+
+.title_page h2{
+  margin: 0;
+}
+
+.mat-menu-panel {
+  border-radius: 10px !important;
+}

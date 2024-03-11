@@ -1,0 +1,50 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended (click)="goBack()">
+        <mat-icon>arrow_back</mat-icon>
+        RETOUR
+      </button>
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+  </header>
+  <mat-card class="title_page"><h2>{{isCreateManga ? 'NOUVEAU' : 'MODIFIER'}} MANGA</h2></mat-card>
+
+  <main fxLayout fxFlex="1 1 auto" fxLayoutAlign="center center">
+    <mat-card class="mat-elevation-z6">
+      <form [formGroup]="mangaForm" (submit)="onSubmit()">
+        <mat-card-content fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Éditeur</mat-label>
+            <mat-select formControlName="editor" required>
+              @for (editeur of listEditors; track editeur._id) {
+                <mat-option value="{{editeur._id}}">{{ editeur.libelle }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Titre</mat-label>
+            <input matInput formControlName="libelle" required>
+            @if (mangaForm.controls.libelle.invalid) {
+              <mat-error>Veuillez entrer le titre du manga</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>URL Logo</mat-label>
+            <input matInput formControlName="urlImg" required>
+            @if (mangaForm.controls.urlImg.invalid) {
+              <mat-error>Veuillez entrer l'URL du logo</mat-error>
+            }
+          </mat-form-field>
+          @if (mangaForm.controls.urlImg.valid) {
+            <img mat-card-avatar src="{{mangaForm.value.urlImg}}" alt="Logo {{mangaForm.value.libelle}}">
+          }
+        </mat-card-content>
+        <mat-card-actions fxFlexAlign="center" fxLayoutGap="30px">
+          <button mat-fab extended type="submit">{{isCreateManga ? 'NOUVEAU' : 'MODIFIER'}} MANGA</button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </main>
+</div>

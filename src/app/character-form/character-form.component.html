@@ -1,0 +1,65 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended (click)="goBack()">
+        <mat-icon>arrow_back</mat-icon>
+        RETOUR
+      </button>
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+  </header>
+  <mat-card class="title_page"><h2>{{isCreatePerso ? 'NOUVEAU' : 'MODIFIER'}} PERSONNAGE</h2></mat-card>
+
+  <main fxLayout fxFlex="1 1 auto" fxLayoutAlign="center center">
+    <mat-card class="mat-elevation-z6">
+      <form [formGroup]="characterForm" (submit)="onSubmit()">
+        <mat-card-content fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Éditeur</mat-label>
+            <mat-select formControlName="editor" (selectionChange)="setMangaList()" required>
+              @for (editor of allEditors; track editor._id) {
+                <mat-option value="{{editor._id}}">{{ editor.libelle }}</mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Manga</mat-label>
+            <mat-select formControlName="manga" required>
+              @for (manga of mangasToDisplay; track manga._id) {
+                <mat-option value="{{manga._id}}">{{ manga.libelle }}</mat-option>
+              }
+            </mat-select>
+            @if (characterForm.controls.manga.invalid) {
+              <mat-error>{{getMangaErrorMessage()}}</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Nom</mat-label>
+            <input matInput formControlName="libelle" required>
+            @if (characterForm.controls.libelle.invalid) {
+              <mat-error>Veuillez entrer le nom du personnage</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Rôle</mat-label>
+            <input matInput formControlName="role" required>
+            @if (characterForm.controls.role.invalid) {
+              <mat-error>Veuillez entrer le rôle du personnage</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" color="primary" fxFlexFill>
+            <mat-label>Particularité</mat-label>
+            <input matInput formControlName="particularite">
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions fxFlexAlign="center" fxLayoutGap="30px">
+          <button type="submit" mat-fab extended>
+            <mat-icon>{{isCreatePerso ? 'add' : 'edit'}}</mat-icon>
+            {{isCreatePerso ? 'CRÉER' : 'MODIFIER'}} PERSONNAGE</button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </main>
+</div>

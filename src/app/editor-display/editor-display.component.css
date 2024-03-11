@@ -1,0 +1,49 @@
+mat-card{
+  min-width: fit-content;
+  width: 410px;
+}
+
+mat-card-header{
+  padding: 10px !important;
+}
+
+mat-card-actions{
+  padding: 10px !important;
+}
+
+mat-card-content{
+  padding: 0 !important;
+}
+
+mat-action-list{
+  padding: 0 !important;
+}
+
+mat-action-list button{
+  height: fit-content !important;
+  padding: 0 10px !important;
+}
+
+mat-action-list button img{
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 10px 10px;
+}
+
+h3{
+  text-align: center;
+  font-size: large;
+  margin: 0;
+  padding: 0 20px;
+}
+
+h3[matListItemLine]{
+  padding: 20px;
+}
+
+button:last-child{
+  background: var(--color-gradient) !important;
+  color: white !important;
+  margin: 8px;
+  height: 48px !important;
+}

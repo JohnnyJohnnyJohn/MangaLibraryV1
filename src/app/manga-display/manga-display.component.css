@@ -1,0 +1,76 @@
+h3 {
+  margin: 16px;
+}
+
+table {
+  width: 100%;
+  min-width: fit-content !important;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  margin-top: 10px !important;
+}
+
+th{
+  font-size: x-large;
+  font-weight: bolder;
+  background: var(--full-color-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  width: 30%;
+  text-align: center;
+}
+
+td:not(:last-child){
+  font-size: large;
+  text-align: center;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+mat-card{
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+mat-card-header{
+  padding: 20px !important;
+}
+
+mat-card button{
+  background: var(--full-color-gradient) !important;
+  color: white;
+}
+
+mat-card-content>button{
+  margin: 10px 10px 20px 10px;
+  padding: 20px;
+}
+
+mat-card-actions>button{
+  width: 100%;
+}
+
+mat-card-content{
+  background: white;
+  padding: 10px 10px 0 10px !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+mat-card-actions{
+  padding: 20px !important;
+}
+
+mat-card-header img{
+  width: 100px;
+  height: 100px;
+  margin: 0 !important;
+  object-fit: fill !important;
+}
+
+mat-card-actions{
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

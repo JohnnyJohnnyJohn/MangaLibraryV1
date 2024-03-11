@@ -1,0 +1,33 @@
+a{
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+mat-card{
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+
+mat-card-actions{
+  padding: 16px !important;
+}
+
+mat-card-actions button:last-child{
+  font-size: 1rem;
+  padding: 20px;
+  background: var(--dark-gradient);
+  color: var(--accent-color);
+}
+
+mat-card-actions button:first-child{
+  font-size: 1rem;
+  padding: 20px;
+  background: var(--color-gradient);
+  color: white;
+}
+
+mat-hint{
+  color: var(--warn-color) !important;
+}

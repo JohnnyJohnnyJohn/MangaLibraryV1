@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "'One Piece' célèbre son 1000e épisode avec une émission spéciale",
+      "content": "La franchise 'One Piece', l'une des séries manga et anime les plus durables et aimées au monde, a marqué l'histoire en célébrant la diffusion de son 1000e épisode. Cet événement historique a été accompagné d'une émission spéciale, offrant aux fans une plongée profonde dans le monde de Luffy et de ses compagnons pirates, avec des interviews, des rétrospectives et des aperçus exclusifs des arcs à venir.",
+      "img": "https://otakuusamagazine.com/wp-content/uploads/2021/01/Double-Spread-Cover-Art_WJ%EF%BC%93-%EF%BC%96.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Le retour de 'Naruto' avec une nouvelle série spin-off centrée sur Boruto",
+      "content": "Le monde de 'Naruto' continue de s'agrandir avec l'annonce d'une nouvelle série spin-off centrée sur Boruto Uzumaki, le fils de Naruto. Cette nouvelle série promet de poursuivre l'héritage de son prédécesseur tout en explorant de nouvelles dynamiques et menaces dans le monde ninja, offrant aux fans de la première heure et aux nouveaux venus une expérience fraîche et captivante.",
+      "img": "https://m.media-amazon.com/images/I/710cFfQvqJL.jpg"
+    },
+    {
+      "id": 3,
+      "title": "'Hunter x Hunter' reprend après une longue pause",
+      "content": "Après une attente interminable, 'Hunter x Hunter' de Yoshihiro Togashi fait son retour tant attendu. La série, célèbre pour ses arcs narratifs complexes et son monde richement développé, reprend la publication après une pause prolongée, suscitant l'enthousiasme et la spéculation parmi les fans sur la direction future de l'histoire de Gon et de ses amis.",
+      "img": "https://m.media-amazon.com/images/I/81D489FSb2L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Célébration des 30 ans de 'Dragon Ball Z': Une rétrospective globale",
+      "content": "Marquant le 30e anniversaire de sa première diffusion, 'Dragon Ball Z' reste une pierre angulaire de la culture anime et manga, influençant des générations de fans et de créateurs. Cette rétrospective globale souligne l'impact durable de la série, depuis ses batailles emblématiques jusqu'à son héritage dans le storytelling moderne. Des événements spéciaux, des rééditions de produits et des expositions sont prévus pour célébrer cet anniversaire majeur, réaffirmant la place de 'Dragon Ball Z' dans le panthéon des animes.",
+      "img": "https://images.justwatch.com/poster/311344951/s592/temporada-1.webp,%20https://images.justwatch.com/poster/311344951/s592/temporada-1.webp"
+    },
+    {
+      "id": 5,
+      "title": "Les ventes de mangas dépassent celles des comics aux États-Unis",
+      "content": "Pour la première fois, les ventes de mangas aux États-Unis ont dépassé celles des comics traditionnels, marquant un tournant significatif dans les préférences de lecture des Américains. Porté par la popularité croissante de séries comme 'Attack on Titan', 'My Hero Academia', et 'Demon Slayer', le manga s'est solidement établi comme une forme majeure de divertissement, reflétant un changement global dans la consommation de médias.",
+      "img": "https://anotherwhiskyformisterbukowski.com/wp-content/uploads/2013/10/dragon-ball-z-avengers-marvel-super-heros.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Une exposition d'art célèbre 20 ans de 'Fullmetal Alchemist'",
+      "content": "Pour célébrer le 20e anniversaire de 'Fullmetal Alchemist', une série acclamée par la critique et aimée des fans, une exposition d'art spéciale a été organisée. Présentant des dessins originaux, des croquis de production, et des artefacts uniques, l'exposition offre une perspective inédite sur le processus créatif derrière l'univers de la série, rendant hommage à son impact durable sur la culture manga et anime.",
+      "img": "https://www.animeclick.it/immagini/anime/Fullmetal_Alchemist_2009/cover/Fullmetal_Alchemist_2009-cover.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Le phénomène 'Jujutsu Kaisen' continue de dominer les ventes de mangas",
+      "content": "Depuis sa première publication en 2018, 'Jujutsu Kaisen' de Gege Akutami a captivé des millions de lecteurs à travers le monde. Avec la sortie de son adaptation en anime en 2020, la série a vu une augmentation exponentielle de ses ventes, se positionnant régulièrement en tête des classements de mangas les plus vendus. L'engouement pour les aventures de Yuji Itadori et de ses compagnons exorcistes ne montre aucun signe de ralentissement.",
+      "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/09/jujutsu-kaisen.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Annonce de l'adaptation en anime de 'Chainsaw Man' par MAPPA",
+      "content": "L'annonce tant attendue de l'adaptation en anime de 'Chainsaw Man', le manga à succès de Tatsuki Fujimoto, a été officiellement faite. Le studio MAPPA, connu pour son travail sur 'Attack on Titan' et 'Jujutsu Kaisen', est chargé de la production. Les fans ont été traités à un premier aperçu prometteur qui promet fidélité au matériel source et une qualité d'animation exceptionnelle.",
+      "img": "https://images.alphacoders.com/126/1261782.png"
+    },
+    {
+      "id": 9,
+      "title": "Retour sur le succès de 'Demon Slayer' au box-office japonais",
+      "content": "Le film 'Demon Slayer: Mugen Train' a établi de nouveaux records au box-office japonais, devenant le film le plus rapide de l'histoire à dépasser les 10 milliards de yens de recettes. Adapté de la série manga de Koyoharu Gotouge, le film a captivé des audiences mondiales, soulignant l'immense popularité de la série et son impact culturel profond.",
+      "img": "https://m.media-amazon.com/images/I/81ywJT+vlVL.jpg"
+    },
+    {
+      "id": 10,
+      "title": "'My Hero Academia' annonce sa septième saison d'anime",
+      "content": "La populaire série 'My Hero Academia', créée par Kohei Horikoshi, a annoncé le lancement de sa septième saison. Continuant à suivre les aventures de Izuku Midoriya et de la classe 1-A de l'U.A. High School, cette nouvelle saison promet plus d'action, de développement de personnages et de batailles héroïques, captivant une base de fans déjà solide et en attirant de nouveaux.",
+      "img": "https://preview.redd.it/my-hero-academia-season-7-key-visual-v0-pky1ul99fh5c1.jpg?width=640&crop=smart&auto=webp&s=b3d37a87cb9c9d1575c194b4653a39a6574da03d"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended routerLink="/login">
+        <mat-icon>arrow_back</mat-icon>
+        RETOUR
+      </button>
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+  </header>
+  <mat-card class="title_page"><h2>INSCRIPTION</h2></mat-card>
+
+  <main fxLayout fxFlex="1 1 auto" fxLayoutAlign="center center">
+
+    <mat-card class="mat-elevation-z6">
+      <form [formGroup]="registerForm" (submit)="onSubmit()">
+        <mat-card-content fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Nom</mat-label>
+            <input matInput formControlName="nom" required>
+            @if (registerForm.controls.nom.invalid) {
+              <mat-error>Veuillez entrer votre nom</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Prénom</mat-label>
+            <input matInput formControlName="prenom" required>
+            @if (registerForm.controls.prenom.invalid) {
+              <mat-error>Veuillez entrer votre prénom</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" autocomplete="username" (input)="isEmailHintVisible ? isEmailHintVisible = false : null" required>
+            @if (registerForm.controls.email.invalid) {
+              <mat-error>{{getEmailErrorMessage()}}</mat-error>
+            }
+            @if (isEmailHintVisible) {
+              <mat-hint>Cet email est déjà utilisé</mat-hint>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Mot de passe</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" autocomplete="new-password" required>
+            <button mat-icon-button type="button" matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+              <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            @if (registerForm.controls.password.invalid) {
+              <mat-error>{{getPasswordErrorMessage()}}</mat-error>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Confirmer mot de passe</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="confirmPassword" autocomplete="new-password" required>
+            <button mat-icon-button type="button" matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+              <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            @if (registerForm.controls.confirmPassword.invalid || this.registerForm.hasError('PasswordNoMatch')) {
+              <mat-error>{{getConfirmPasswordErrorMessage()}}</mat-error>
+            }
+            @if (this.registerForm.hasError('PasswordNoMatch')) {
+              <mat-hint>Les mots de passes ne sont pas identiques</mat-hint>
+            }
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-fab extended matTooltip="Remplissez correctement tous les champs pour vous inscrire" [matTooltipHideDelay]="1000" [matTooltipDisabled]="registerForm.valid" type="submit">
+            <mat-icon>person_add</mat-icon>
+            S'INSCRIRE
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </main>
+</div>

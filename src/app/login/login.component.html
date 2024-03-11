@@ -1,0 +1,52 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6" fxLayoutAlign="center center">
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+  </header>
+  <mat-card class="title_page"><h2>CONNEXION</h2></mat-card>
+
+  <main fxLayout fxFlex="1 1 auto" fxLayoutAlign="center center">
+
+    <mat-card class="mat-elevation-z6">
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <mat-card-content fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" autocomplete="username" (input)="isEmailHintVisible ? isEmailHintVisible = false : null; isPasswordHintVisible ? isPasswordHintVisible = false : null" required>
+            @if (loginForm.controls.email.invalid) {
+              <mat-error>{{getEmailErrorMessage()}}</mat-error>
+            }
+            @if (isEmailHintVisible) {
+              <mat-hint>Email inconnu</mat-hint>
+            }
+          </mat-form-field>
+          <mat-form-field appearance="outline" fxFlexFill>
+            <mat-label>Mot de passe</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" autocomplete="new-password" (input)="isPasswordHintVisible ? isPasswordHintVisible = false : null" required>
+            <button mat-icon-button type="button" matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+              <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+            @if (loginForm.controls.password.invalid) {
+              <mat-error>Veuillez entrer un mot de passe</mat-error>
+            }
+            @if (isPasswordHintVisible) {
+              <mat-hint>Email et/ou mot de passe incorrect(s)</mat-hint>
+            }
+          </mat-form-field>
+          <a href="#" fxFlexAlign="end">Mot de passe oublié?</a>
+        </mat-card-content>
+        <mat-card-actions fxFlexAlign="center" fxLayoutGap="10px">
+          <button mat-fab extended routerLink="/register">
+            <mat-icon>person_add</mat-icon>
+            S'INSCRIRE
+          </button>
+          <button mat-fab extended matTooltip="Remplissez correctement tous les champs pour vous connecter" [matTooltipHideDelay]="1000" [matTooltipDisabled]="loginForm.valid" type="submit">
+            <mat-icon>login</mat-icon>
+            SE CONNECTER
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </main>
+</div>

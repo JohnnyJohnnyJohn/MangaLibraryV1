@@ -1,0 +1,83 @@
+<div fxLayout="column" class="container">
+  <header>
+    <mat-toolbar class="mat-elevation-z6">
+      <button mat-fab extended [routerLink]="['/editeur', idEditor]">
+        <mat-icon>arrow_back</mat-icon>
+        RETOUR
+      </button>
+      <span fxFlex="1 1 auto"></span>
+      <h1>MANGA LIBRARY</h1>
+    </mat-toolbar>
+    <mat-card class="title_page"><h2>{{manga?.libelle | uppercase}}</h2></mat-card>
+  </header>
+
+  <main fxLayout="column" fxFlex="1 1 auto" fxLayoutAlign="start center">
+    <mat-card>
+      <mat-card-header fxLayout fxLayoutAlign="center center">
+        <img mat-card-avatar src="{{manga?.urlImg}}" alt="Logo {{manga?.libelle}}">
+      </mat-card-header>
+
+      <mat-card-content fxLayout="column">
+        <button mat-fab extended routerLink="update">
+          <mat-icon>edit</mat-icon>
+          MODIFIER MANGA
+        </button>
+        @if (characters.length == 0) {
+          <mat-divider></mat-divider>
+          <mat-action-list fxLayoutAlign="center center">
+
+            <h3 matListItemLine>Aucun personnage à afficher</h3>
+
+          </mat-action-list><mat-divider></mat-divider>
+        } @else {
+          <table mat-table [dataSource]=characters class="mat-elevation-z8">
+            <ng-container matColumnDef="nom">
+              <th mat-header-cell *matHeaderCellDef> Nom </th>
+              <td mat-cell *matCellDef="let character "> {{character.libelle}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="role">
+              <th mat-header-cell *matHeaderCellDef> Rôle </th>
+              <td mat-cell *matCellDef="let personnage"> {{personnage.role}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="particularite">
+              <th mat-header-cell *matHeaderCellDef> Particularité </th>
+              <td mat-cell *matCellDef="let personnage"> {{personnage.particularite}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="edition">
+              <th mat-header-cell *matHeaderCellDef><mat-icon>edit</mat-icon></th>
+              <td mat-cell *matCellDef="let personnage">
+                <button mat-mini-fab routerLink="./personnage/{{personnage._id}}/update">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="suppression">
+              <th mat-header-cell *matHeaderCellDef><mat-icon>delete</mat-icon></th>
+              <td mat-cell *matCellDef="let personnage">
+                <button mat-mini-fab (click)="onDelete(personnage._id)">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        }
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-fab extended routerLink="./nouveau-personnage">
+          <mat-icon>add</mat-icon>
+          AJOUTER PERSONNAGE
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </main>
+</div>
+
+
