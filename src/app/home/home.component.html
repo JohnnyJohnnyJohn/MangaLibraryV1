@@ -21,7 +21,7 @@
       <span fxFlex="1 1 auto"></span>
       <h1>MANGA LIBRARY</h1>
       <span fxFlex="1 1 auto"></span>
-      <button mat-fab extended [matMenuTriggerFor]="account">
+      <button mat-fab extended [matMenuTriggerFor]="account" id="mon_compte">
         <mat-icon>manage_accounts</mat-icon>
         MON COMPTE
       </button>
@@ -29,7 +29,7 @@
         <button mat-menu-item>
           Informations<br>personnelles
         </button>
-        <button mat-fab extended (click)="logout()">
+        <button mat-fab extended (click)="logout()" id="logout">
           <mat-icon>logout</mat-icon>
           DÉCONNEXION
         </button>
