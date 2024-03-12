@@ -8,7 +8,6 @@ import {MatIcon} from "@angular/material/icon";
 import {MatInput} from "@angular/material/input";
 import {MatToolbar} from "@angular/material/toolbar";
 import {ActivatedRoute, RouterLink} from "@angular/router";
-import {NgxMatFileInputModule} from "@angular-material-components/file-input";
 import {MatOption, MatSelect} from "@angular/material/select";
 import {MangaFacadeService} from "../manga-facade.service";
 import {EditorDto} from "../dto/EditorDto";
@@ -32,7 +31,6 @@ import {HttpErrorResponse} from "@angular/common/http";
     RouterLink,
     ReactiveFormsModule,
     MatIconButton,
-    NgxMatFileInputModule,
     MatSelect,
     MatOption
   ],
@@ -118,7 +116,7 @@ export class MangaFormComponent implements OnInit{
 
   private onUpdate() {
     this.mangaFacadeService.updateManga(
-      this.idMangaFromUrl!,
+      this.idMangaFromUrl,
       this.mangaForm.value.libelle!,
       this.listEditors?.find((element) => element._id === this.mangaForm.value.editor!)!,
       this.mangaForm.value.urlImg!

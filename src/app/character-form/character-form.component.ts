@@ -109,7 +109,7 @@ export class CharacterFormComponent implements OnInit{
     this.characterFacadeService.getAllMangas().subscribe({
       next: (data) => {
         this.allMangas = data;
-        this.mangasToDisplay = this.characterFacadeService.filterMangasByEditor(this.allMangas!, this.characterForm.value.editor!);
+        this.mangasToDisplay = this.characterFacadeService.filterMangasByEditor(this.allMangas, this.characterForm.value.editor!);
         this.characterForm.controls.manga.setValue(this.idMangaFromUrl);
       }, error: () => {
         this.characterFacadeService.openDialog('Erreur lors de la récupération des mangas! Veuillez réessayer.');
@@ -124,7 +124,7 @@ export class CharacterFormComponent implements OnInit{
 
   getMangaErrorMessage() {
     if(this.mangasToDisplay) {
-      return this.mangasToDisplay!.length > 0 ?
+      return this.mangasToDisplay.length ?
         'Veuillez sélectionner un manga' : 'Veuillez d\'abord créer un manga pour cet éditeur';
     }
     return '';

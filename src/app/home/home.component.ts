@@ -7,15 +7,12 @@ import {FlexModule} from "@angular/flex-layout";
 import {MatCardModule} from "@angular/material/card";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
 import { Article } from "../article"
-import { Editeur } from "../editeur";
 import {RouterLink} from "@angular/router";
 import {MatListItemAvatar} from "@angular/material/list";
 import {MatDivider} from "@angular/material/divider";
 import {ArticleService} from "../article.service";
-import {EditorService} from "../editor.service";
 import {EditorDto} from "../dto/EditorDto";
 import {EditorFacadeService} from "../editor-facade.service";
-import {AuthenticationResponseDto} from "../dto/AuthenticationResponseDto";
 
 
 @Component({
@@ -55,7 +52,7 @@ export class HomeComponent implements OnInit{
       .subscribe({
         next: (data) => {
           this.editors = data;
-        }, error: (errorHttp: any) => {
+        }, error: () => {
             this.editorFacadeService.openDialog('Erreur lors de la récupération des éditeurs! Veuillez réessayer.');
         }
       });

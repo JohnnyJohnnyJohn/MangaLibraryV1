@@ -5,7 +5,6 @@ import {MangaService} from "./manga.service";
 import {MatDialog} from "@angular/material/dialog";
 import {AlertDialogComponent} from "./alert-dialog/alert-dialog.component";
 import {EditorDto} from "./dto/EditorDto";
-import {MangaDto} from "./dto/MangaDto";
 import {CharacterDto} from "./dto/CharacterDto";
 import {CharacterService} from "./character.service";
 

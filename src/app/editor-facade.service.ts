@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {Router} from "@angular/router";
 import {EditorService} from "./editor.service";
 import {MatDialog} from "@angular/material/dialog";
 import {AlertDialogComponent} from "./alert-dialog/alert-dialog.component";

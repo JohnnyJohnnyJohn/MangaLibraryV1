@@ -18,8 +18,7 @@ import {
         MatDialogContent,
         MatDialogTitle
     ],
-  templateUrl: './confirm-dialog.component.html',
-  styleUrl: './confirm-dialog.component.css'
+  templateUrl: './confirm-dialog.component.html'
 })
 export class ConfirmDialogComponent {
   message: string = ""

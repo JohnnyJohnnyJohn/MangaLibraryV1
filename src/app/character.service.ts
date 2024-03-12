@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {MangaDto} from "./dto/MangaDto";
 import {CharacterDto} from "./dto/CharacterDto";
-import {Observable} from "rxjs";
-import {EditorDto} from "./dto/EditorDto";
 
 @Injectable({
   providedIn: 'root'

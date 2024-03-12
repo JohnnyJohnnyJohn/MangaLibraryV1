@@ -1,4 +1,4 @@
-import { Location } from '@angular/common'
+import { Location, UpperCasePipe } from '@angular/common'
 import { Component } from '@angular/core';
 import {FlexLayoutModule, FlexModule} from "@angular/flex-layout";
 import {MatCardModule} from "@angular/material/card";
@@ -7,7 +7,6 @@ import {MatFabButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {MatToolbar} from "@angular/material/toolbar";
 import {RouterLink} from "@angular/router";
-import {UpperCasePipe} from "@angular/common";
 
 @Component({
   selector: 'app-page-not-found',

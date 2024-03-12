@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {AuthenticationResponseDto} from "./dto/AuthenticationResponseDto";
-import {AlertDialogComponent} from "./alert-dialog/alert-dialog.component";
 
 @Injectable({
   providedIn: 'root'
